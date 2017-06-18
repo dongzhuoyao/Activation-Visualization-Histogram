@@ -68,10 +68,11 @@ def download_mnist(download_path):
     keys = ['train-images-idx3-ubyte.gz', 'train-labels-idx1-ubyte.gz',
             't10k-images-idx3-ubyte.gz', 't10k-labels-idx1-ubyte.gz']
 
+
     for k in keys:
         url = (data_url+k).format(**locals())
         target_path = os.path.join(data_dir, k)
-        cmd = ['curl', url, '-o', target_path]
+        cmd = ['curl','-L', url, '-o', target_path]
         print('Downloading ', k)
         subprocess.call(cmd)
         cmd = ['gzip', '-d', target_path]
