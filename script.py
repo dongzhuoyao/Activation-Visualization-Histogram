@@ -8,5 +8,5 @@ subprocess.Popen(['python', 'trainer.py', '--activation', 'lrelu'])
 subprocess.Popen(['python', 'trainer.py', '--activation', 'selu'])
 
 # Run Tensorboard
-subprocess.call(['sleep', '10']) 
-subprocess.call(['python', 'monitor.py', 'train_dir/', '--port', '7007'])
+#subprocess.call(['sleep', '10'])
+#subprocess.call(['python', 'monitor.py', 'train_dir/', '--port', '7007'])

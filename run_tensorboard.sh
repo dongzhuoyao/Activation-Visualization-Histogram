@@ -1,0 +1,1 @@
+python ~/.local/lib/python2.7/site-packages/tensorflow/tensorboard/tensorboard.py --logdir ./train_dir --port 6006
